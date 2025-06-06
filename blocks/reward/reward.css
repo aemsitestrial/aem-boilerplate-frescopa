@@ -1,6 +1,5 @@
 .reward-content {
   border-radius: 12px;
-  padding: 5px;
   margin-bottom: 40px;
   display: flex;
   flex-direction: column;
@@ -32,6 +31,7 @@
   .reward-left {
     padding-left: 220px;
   }
+
   .reward-left p{
     margin: 0;
     padding: 0;
@@ -47,9 +47,10 @@
   flex-direction: column;
   justify-content: center;
 }
+
 .reward-left h6{
+  font: normal normal normal 32px / 32px Baskerville, sans-serif;
   font-size: 32px;
-  font: normal normal normal 32px / 32px Baskerville;
 }
 
 @media (width >= 900px) {
