@@ -146,7 +146,6 @@
   --background-color: var(--color-neutral-50);
   --nav-height: 70px;
   --site-width: 1360px;
-
   --frescopa--color-background: #F4E9DC;
   --frescopa--color-brand: #A33532;
   --frescopa--color-primary: #00647D;
@@ -249,19 +248,19 @@ h2 {
 }
 
 h3 {
-  font: normal normal normal 36px/42px Baskerville;
+  font: normal normal normal 36px/42px Baskerville, sans-serif;
   letter-spacing: var(--type-display-3-letter-spacing);
 }
 
 h4 {
-  font: normal normal normal 32px/32px Baskerville;
-  letter-spacing: 0px;
+  font: normal normal normal 32px/32px Baskerville, sans-serif;
+  letter-spacing: 0;
   margin-bottom: 10px;
 }
 
 h5 {
-  font: normal normal normal 24px/30px Baskerville;
-  letter-spacing: 0px
+  font: normal normal normal 24px/30px Baskerville, sans-serif;
+  letter-spacing: 0
 }
 
 h6 {
@@ -270,8 +269,8 @@ h6 {
 }
 
 p {
-  font: normal normal normal 18px/24px Roboto;
-  letter-spacing: 0px;
+  font: normal normal normal 18px/24px Roboto, sans-serif;
+  letter-spacing: 0;
 }
 
 p,
@@ -332,7 +331,7 @@ a:not(.dropin-design a) {
 }
 
 a:not(.dropin-design a):hover {
-  text-decoration: underline solid Currentcolor;
+  text-decoration: underline solid currentcolor;
 }
 
 /* buttons */
@@ -555,12 +554,12 @@ main > .section + .card-tiles > div {
 }
 
 main > .section + .background {
-  background-color: var(--frescopa--color-background);
   max-width: 1360px;
-  padding: 10px 0px;
+  padding: 10px 0;
   margin-left: auto;
   margin-right: auto;
   background: url('../../styles/backgrounds/big.svg') no-repeat center center/cover;
+  background-color: var(--frescopa--color-background);
 }
 
 main > .section + .background > div {
@@ -574,6 +573,7 @@ main > .section + .background > div {
     padding: 50px 0 2px;
   }
 }
+
 /* Section layout variations */
 .section.columns {
   display: flex;

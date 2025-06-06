@@ -140,6 +140,7 @@ main .form select {
 
 main .form input[name='password'] {
     -webkit-text-security: disc;
+    /* stylelint-disable-next-line property-no-unknown */
     text-security: disc;
 }
 
@@ -210,6 +211,11 @@ main .form label.required::after {
     content: "*";
     color: var(--form-label-color);
     padding-inline-start: 5px;
+}
+
+/* Keep the base positioning */
+main .form .field-wrapper {
+    position: relative;
 }
 
 main .form form p,
@@ -395,7 +401,7 @@ main .form .button-wrapper button {
 }
 
 main .form .button-wrapper button:hover {
-    border: 3px solid var(#fff);
+    border: 3px solid var(--background-color-primary);
     color: #fff;
     background-color: var(--button-secondary-color);
 }
@@ -652,10 +658,6 @@ main .form form .checkbox-group-wrapper.horizontal .field-description {
     order: 1;
     margin-top: 0.5rem;
 }
-/* Keep the base positioning */
-main .form .field-wrapper {
-    position: relative;
-}
 
 /* Responsive adjustments for mobile */
 @media (width <= 599px) {
@@ -672,6 +674,7 @@ main .form .field-wrapper {
     }
 }
 
+/* stylelint-disable-next-line no-duplicate-selectors */
 main .form input[type='checkbox'],
 main .form input[type='radio'] {
     width: 24px;
